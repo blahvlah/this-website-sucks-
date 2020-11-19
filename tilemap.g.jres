@@ -1,0 +1,28 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "level": {
+        "id": "level",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAxMDEwMTA1MDcwNzA3MDcwNzA3MDUwMTAxMDEwMTAxMDEwMTAxMDUwNzA3MDIwNTA3MDcwNTAxMDEwMTAxMDEwMTAxMDEwNTA3MDcwNTA3MDcwNzA1MDEwMTAxMDEwMTAxMDEwMTA1MDcwNzA3MDUwNzA3MDUwMTAxMDEwMTAxMDEwMTAxMDUwNzA3MDcwNzA1MDcwNTA1MDUwNTA1MDUwMzAzMDMwNTA3MDcwNzA1MDcwMDA1MDcwNzA3MDYwNTAzMDMwMzA1MDcwMjA1MDcwNzA1MDcwNzA3MDcwNTA3MDMwMzAzMDUwNzA1MDcwNzA3MDUwNzA1MDcwNTA3MDcwMzAzMDMwNTA3MDUwNzA3MDcwNTA3MDcwNTA3MDcwNzA0MDQwNDA1MDcwNTA1MDcwNzA1MDUwNTA1MDUwNTA1MDQwNDA0MDUwNzA3MDIwNTA3MDcwNTA0MDQwNDA0MDQwNDA0MDQwNTA3MDcwNTA3MDUwNzA1MDQwNDA0MDQwNDA0MDQwNDA1MDcwNTA4MDcwNTA3MDUwNDA0MDQwNDA0MDQwNDA0MDUwNzA3MDUwNTA1MDcwNTA0MDQwNDA0MDQwNDA0MDQwNTA3MDcwNzA3MDcwNzA1MDQwNDA0MDQwNDA0MDQwNDA1MDIwNzA3MDcwNzAyMDUwNDA0MDQwNDA0MDAyMDAwMDAwMDAyMDAwMDAwMjAwMDIwMDAwMjAwMDAwMDIwMDAwMjAwMDIwMDAwMDAyMDAwMjAwMDAyMDAwMDAwMjAwMDAwMDIyMjIyMjIwMDIwMDAyMDAwMDIwMDIwMDAyMDAwMDIyMDAwMDAwMjAwMjAyMDAwMjAyMDIwMDAwMDIwMjAwMDIwMDAwMjAwMDAyMDIwMDIyMDIwMjIyMjAwMjAwMDIwMDAyMDAwMDAwMDIwMDAwMjAyMjIwMDAwMDAyMDIwMDAwMDAyMDAwMDAwMjAwMDIyMDIwMjAwMDAwMDIwMDAwMDAwMDIwMDAwMDAyMDAwMDAwMDAyMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.castle.tileGrass2",
+            "sprites.castle.tilePath5",
+            "sprites.castle.tileGrass1",
+            "sprites.builtin.forestTiles0",
+            "sprites.dungeon.collectibleInsignia",
+            "sprites.dungeon.chestClosed",
+            "sprites.builtin.oceanDepths9",
+            "sprites.dungeon.chestOpen"
+        ]
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}

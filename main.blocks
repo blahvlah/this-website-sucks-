@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="%0.urlN/2(lgg1qd^m_6">player</variable><variable id="!S7M2dM0|):}#S$z%oR!">food</variable><variable type="KIND_SpriteKind" id="2~)[l#y0$]7:G5)b^nlQ">Player</variable><variable type="KIND_SpriteKind" id="T]Yc5|h;fXP}KNg|B?ob">Projectile</variable><variable type="KIND_SpriteKind" id="K*[{ipipe#0rM/obu!;?">Food</variable><variable type="KIND_SpriteKind" id="M8Sqw1kbW/_e4#G7qQ;,">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor"><field name="tilemap">tilemap`level`</field><next><block type="variables_set"><field name="VAR" id="%0.urlN/2(lgg1qd^m_6">player</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . 6 6 6 6 6 6 . . . . 
+. . . . . 6 6 9 9 6 6 6 6 . . . 
+. . . . . c 9 6 6 6 6 6 c . . . 
+. . . . 6 c 9 6 6 6 6 6 c 6 . . 
+. . . 8 6 c 9 6 6 6 6 6 c 6 8 . 
+. . . f 6 c 9 6 6 6 6 6 c 6 f . 
+. . . f 8 c 6 6 6 6 6 6 c 8 f . 
+. . . f 6 c 6 b b b b 6 c 6 f . 
+. . . 8 6 6 b c c c c b 6 6 8 . 
+. . . 8 8 b c c c c c c b 8 8 . 
+. . . f 8 9 9 9 9 9 9 9 9 8 f . 
+. . . f 8 d 6 6 6 6 6 6 d 8 f . 
+. . . . 6 d d 6 6 6 6 d d 6 f . 
+. . . . f 6 d 6 6 6 6 d 6 f . . 
+. . . . . 8 6 6 6 6 6 6 8 . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><shadow type="variables_get"><field name="VAR" id="%0.urlN/2(lgg1qd^m_6">player</field></shadow></value><next><block type="mapplaceonrandomtile"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="%0.urlN/2(lgg1qd^m_6">player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">sprites.castle.tilePath5</field></shadow></value><next><block type="camerafollow"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="%0.urlN/2(lgg1qd^m_6">player</field></shadow></value><next><block type="variables_set"><field name="VAR" id="!S7M2dM0|):}#S$z%oR!">food</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+4 4 4 . . 4 4 4 4 4 . . . . . . 
+4 5 5 4 4 5 5 5 5 5 4 4 . . . . 
+b 4 5 5 1 5 1 1 1 5 5 5 4 . . . 
+. b 5 5 5 5 1 1 5 5 1 1 5 4 . . 
+. b d 5 5 5 5 5 5 5 5 1 1 5 4 . 
+b 4 5 5 5 5 5 5 5 5 5 5 1 5 4 . 
+c d 5 5 5 5 5 5 5 5 5 5 5 5 5 4 
+c d 4 5 5 5 5 5 5 5 5 5 5 1 5 4 
+c 4 5 5 5 d 5 5 5 5 5 5 5 5 5 4 
+c 4 d 5 4 5 d 5 5 5 5 5 5 5 5 4 
+. c 4 5 5 5 5 d d d 5 5 5 5 5 b 
+. c 4 d 5 4 5 d 4 4 d 5 5 5 4 c 
+. . c 4 4 d 4 4 4 4 4 d d 5 d c 
+. . . c 4 4 4 4 4 4 4 4 5 5 5 4 
+. . . . c c b 4 4 4 b b 4 5 4 4 
+. . . . . . c c c c c c b b 4 . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Food</field></shadow></value></block></value><next><block type="mapplaceonrandomtile"><value name="sprite"><shadow type="variables_get"><field name="VAR" id="!S7M2dM0|):}#S$z%oR!">food</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">sprites.builtin.oceanDepths9</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" x="550" y="-10"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Food</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></block></value></block></statement></block><block type="spriteshittile" x="510" y="230"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="tile"><shadow type="tileset_tile_picker"><field name="tile">sprites.dungeon.chestClosed</field></shadow></value><value name="HANDLER_DRAG_PARAM_location"><shadow type="argument_reporter_custom"><mutation typename="tiles.Location"/><field name="VALUE">location</field></shadow></value><statement name="HANDLER"><block type="gameOver"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose"><field name="win">false</field></shadow></value></block></statement></block></xml>
